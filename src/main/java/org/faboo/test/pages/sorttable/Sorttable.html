@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+	<head >
+		<meta charset="utf-8" />
+        <!--<script src="sorttable.js"></script>-->
+
+	</head>
+	<body>
+		<div id="bd">
+			<h2>Client Side table sorting</h2>
+                <form wicket:id="form">
+                    <input wicket:id="att1" type="text">
+                    <input wicket:id="att2" type="text">
+                    <input wicket:id="add" type="submit">
+                </form>
+            <div wicket:id="wmc">
+                <table class="sortable">
+                    <thead>
+                        <tr>
+                            <th>Attribute 1</th>
+                            <th>Attribute 2</th>
+                        </tr>
+                    </thead>
+                    <tr wicket:id="listview">
+                        <td wicket:id="att1"></td>
+                        <td wicket:id="att2"></td>
+                    </tr>
+                </table>
+            </div>
+		</div>
+	</body>
+</html>

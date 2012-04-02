@@ -6,6 +6,7 @@ import org.apache.wicket.markup.html.WebPage;
 import org.faboo.test.pages.DataTable.DTTestPage;
 import org.faboo.test.pages.open.stringdatemodel.StringDateModelTestPage;
 import org.faboo.test.pages.secured.SecurePage1;
+import org.faboo.test.pages.sorttable.Sorttable;
 import org.faboo.test.radio.RadioListPage;
 import org.faboo.test.radio.RadioTestPage;
 import org.faboo.test.tabtest.TabbedPage;
@@ -74,6 +75,13 @@ public class HomePage extends WebPage {
             }
         });
 
+        add(new Link<DTTestPage>("sorttable") {
+
+            @Override
+            public void onClick() {
+                setResponsePage(new Sorttable());
+            }
+        });
         add(new Link<StringDateModelTestPage>("stringDateModel") {
 
             @Override
